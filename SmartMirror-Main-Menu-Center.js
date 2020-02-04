@@ -61,6 +61,7 @@ Module.register("SmartMirror-Main-Menu-Center", {
 				transportation: {title: "Public Transportation", icon: "fa fa-bus" },
 				traffic: {title: "Traffic Load", icon: "fa fa-car" },
 				speech: {title: "Speech Recogn. Output", icon: "fa fa-comment"},
+				news: {title: "News", icon: "fa fa-newspaper-o" },
 				newsfeed: {title: "Heise Newsfeed", icon: "fa fa-rss-square" },
 				bivital: {title: "Vital Data" , icon: "fa fa-heart"},
 				soccer:{title: "Soccer Results", icon:"fa fa-circle"},
