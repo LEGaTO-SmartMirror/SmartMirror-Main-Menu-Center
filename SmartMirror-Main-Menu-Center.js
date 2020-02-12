@@ -159,7 +159,7 @@ Module.register("SmartMirror-Main-Menu-Center", {
 		table.className = "tbody";
 
 
-		this.data.header = 'Main Menu'
+		//this.data.header = 'Main Menu'
 
 		function makeOnClickHandler(a) {
 			return function() {
