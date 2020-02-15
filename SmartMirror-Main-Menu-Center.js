@@ -66,6 +66,7 @@ Module.register("SmartMirror-Main-Menu-Center", {
 				newsfeed: {title: "Heise Newsfeed", icon: "fa fa-rss-square" },
 				bivital: {title: "Vital Data" , icon: "fa fa-heart"},
 				soccer:{title: "Soccer Results", icon:"fa fa-circle"},
+				fuel:{title: "Fuel Prices", icon:"fa fa-tint"},
 				back: {title: "Back" , icon: "fa fa-undo" }
 			},
 			smarthome: {
