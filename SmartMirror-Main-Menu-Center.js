@@ -20,7 +20,10 @@ Module.register("SmartMirror-Main-Menu-Center", {
 				camera: {title: "Camera Detections", icon: "fa fa-television"},					
 				augmentations: {title: "AI Art Mirror", icon: "fa fa-file"},
 				//messevideo: {title: "Show messe video", icon: "fa fa-film"},
-				applications: {title: "Available Applications" , icon: "fa fa-clone"},
+				// applications: {title: "Available Applications" , icon: "fa fa-clone"},
+				utilities: {title: "Utilities" , icon: "fa fa-clone"},
+				campus: {title: "Campus Area", icon: "fa fa-university"},
+				entertainment: {title: "Entertainment", icon: "fa fa-star"},
 				smarthome: {title: "Smart Home" , icon: "fa fa-home"},
 				preferences: {title: "Preferences" , icon: "fa fa-cogs"}
             	//monitorOff: { title: "Turn Off Monitor", icon: "television", source: "SERVER" },
@@ -52,7 +55,7 @@ Module.register("SmartMirror-Main-Menu-Center", {
 				corlab: {title: "Corlab video", icon: ""},
 				back: {title: "Back" , icon: "fa fa-undo" }
 			},
-			application: {
+			/*applications: {
 				clock: {title: "Clock", icon: "fa fa-clock-o" },
 				weather: {title: "Weather", icon: "fa fa-cloud"},
 				crypto: {title: "Crypto Stock Values", icon: "fa fa-bitcoin" },
@@ -69,6 +72,31 @@ Module.register("SmartMirror-Main-Menu-Center", {
 				fuel:{title: "Fuel Prices", icon:"fa fa-tint"},
 				comic:{title: "Daily Comic", icon:"fa fa-columns"},
 				dota2:{title: "Dota2 Esports", icon:"fa fa-gamepad"},
+				back: {title: "Back" , icon: "fa fa-undo" }
+			},*/
+			utilities: {
+				clock: {title: "Clock", icon: "fa fa-clock-o" },
+				calendar: {title: "Calendar", icon: "fa fa-calendar"},
+				weather: {title: "Weather", icon: "fa fa-cloud"},
+				bivital: {title: "Vital Data" , icon: "fa fa-heartbeat"},
+				speech: {title: "Speech Recogn. Output", icon: "fa fa-comment"},
+				back: {title: "Back" , icon: "fa fa-undo" }
+			},
+			campus: {
+				mensa: {title: "Mensa Offer", icon: "fa fa-cutlery" },
+				canteen: {title: "Westend Canteen", icon: "fa fa-apple"},
+				transportation: {title: "Public Transportation", icon: "fa fa-bus" },
+				traffic: {title: "Traffic Load", icon: "fa fa-car" },
+				fuel:{title: "Fuel Prices", icon:"fa fa-tint"},
+				back: {title: "Back" , icon: "fa fa-undo" }
+			},
+			entertainment: {
+				news: {title: "News", icon: "fa fa-newspaper-o" },
+				newsfeed: {title: "Heise Newsfeed", icon: "fa fa-rss-square" },
+				comic:{title: "Daily Comic", icon:"fa fa-columns"},
+				soccer:{title: "Soccer Results", icon:"fa fa-circle"},
+				dota2:{title: "Dota2 Esports", icon:"fa fa-gamepad"},
+				crypto: {title: "Crypto Stock Values", icon: "fa fa-bitcoin" },
 				back: {title: "Back" , icon: "fa fa-undo" }
 			},
 			smarthome: {
@@ -244,6 +272,21 @@ Module.register("SmartMirror-Main-Menu-Center", {
 				this.updateDom();
 			}else if(payload === 'application'){
 				this.menuObjPointer = this.config.menuObj.application;
+				this.currentMenuAmount = Object.keys(this.menuObjPointer).length;
+				this.selectedNum = -1;
+				this.updateDom();
+			}else if(payload === 'utilities'){
+				this.menuObjPointer = this.config.menuObj.utilities;
+				this.currentMenuAmount = Object.keys(this.menuObjPointer).length;
+				this.selectedNum = -1;
+				this.updateDom();
+			}else if(payload === 'campus'){
+				this.menuObjPointer = this.config.menuObj.campus;
+				this.currentMenuAmount = Object.keys(this.menuObjPointer).length;
+				this.selectedNum = -1;
+				this.updateDom();
+			}else if(payload === 'entertainment'){
+				this.menuObjPointer = this.config.menuObj.entertainment;
 				this.currentMenuAmount = Object.keys(this.menuObjPointer).length;
 				this.selectedNum = -1;
 				this.updateDom();
