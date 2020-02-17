@@ -67,6 +67,8 @@ Module.register("SmartMirror-Main-Menu-Center", {
 				bivital: {title: "Vital Data" , icon: "fa fa-heart"},
 				soccer:{title: "Soccer Results", icon:"fa fa-circle"},
 				fuel:{title: "Fuel Prices", icon:"fa fa-tint"},
+				comic:{title: "Daily Comic", icon:"fa fa-columns"},
+				dota2:{title: "Dota2 Esports", icon:"fa fa-gamepad"},
 				back: {title: "Back" , icon: "fa fa-undo" }
 			},
 			smarthome: {
