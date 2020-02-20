@@ -95,7 +95,8 @@ Module.register("SmartMirror-Main-Menu-Center", {
 				newsfeed: {title: "Heise Newsfeed", icon: "fa fa-rss-square" },
 				comic:{title: "Daily Comic", icon:"fa fa-columns"},
 				soccer:{title: "Soccer Results", icon:"fa fa-circle"},
-				dota2:{title: "Dota2 Esports", icon:"fa fa-gamepad"},
+				dota2:{title: "Dota2 Esports", icon:"fa fa-trophy"},
+				games:{title: "ITCH-IO Games", icon:"fa fa-gamepad"},
 				crypto: {title: "Crypto Stock Values", icon: "fa fa-bitcoin" },
 				back: {title: "Back" , icon: "fa fa-undo" }
 			},
