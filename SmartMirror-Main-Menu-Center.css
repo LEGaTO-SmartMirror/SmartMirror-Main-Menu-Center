@@ -39,15 +39,15 @@
 
 .namecellMainMenu{
     padding-right: 5px; 
-text-align: right; 
-align: right;
+    text-align: right; 
+    align: right;
     /*display: table-cell; */
 }
 
 .valuecellMainMenu{
     padding-left: 3px;
-align: right;
-text-align: right; 
+    align: right;
+    text-align: right; 
   /*  width: 460px; */
 
   /*  display: table-cell; */
@@ -72,4 +72,21 @@ text-align: right;
   background-size: 200% 100%;
   background-position: right bottom;
   transition: all 3s ease-out;
+}
+
+.pulse:after {
+    content:'';
+    background: rgba(250, 250, 250, 0.25);
+    position:absolute;
+    width:0%;
+    top:0;
+    left:0;
+    height:100%;
+    transition: 2.5s linear;
+    animation: selection 2.5s linear;
+    z-index:-1;
+}
+@keyframes selection {
+    from {width: 0%;}
+    to {width: 100%;} 
 }

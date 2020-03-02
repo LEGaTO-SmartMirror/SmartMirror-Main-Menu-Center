@@ -78,6 +78,7 @@ Module.register("SmartMirror-Main-Menu-Center", {
 				clock: {title: "Clock", icon: "fa fa-clock-o" },
 				calendar: {title: "Calendar", icon: "fa fa-calendar"},
 				weather: {title: "Weather", icon: "fa fa-cloud"},
+				wforecast: {title: "Weather Forecast", icon: "fa fa-line-chart"},
 				bivital: {title: "Vital Data" , icon: "fa fa-heartbeat"},
 				speech: {title: "Speech Recogn. Output", icon: "fa fa-comment"},
 				back: {title: "Back" , icon: "fa fa-undo" }
@@ -218,16 +219,17 @@ Module.register("SmartMirror-Main-Menu-Center", {
 			span.innerHTML = `<i class="${this.menuObjPointer[k].icon}" aria-hidden="true"></i>`;
 		
 			if (k == selectedObject){
-				//span.classList.add('pulse'); 
-				//namecell.classList.add('pulse'); 
+				// span.classList.add('pulse'); 
+				// namecell.classList.add('pulse'); 
 				console.log(this.name + " added animation to span");
 				console.log(" ")
 				console.log(" ")
 				span.classList.add('pulse'); 
 				namecell.classList.add('pulse'); 
 
-				//span.classList.add('pulseanimation'); 
-				//namecell.classList.add('pulseanimation'); 
+				console.log(namecell)
+				// span.classList.add('pulseanimation'); 
+				// namecell.classList.add('pulseanimation'); 
 			}
 
 			
