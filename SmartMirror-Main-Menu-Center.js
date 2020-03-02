@@ -77,7 +77,7 @@ Module.register("SmartMirror-Main-Menu-Center", {
 			utilities: {
 				clock: {title: "Clock", icon: "fa fa-clock-o" },
 				calendar: {title: "Calendar", icon: "fa fa-calendar"},
-				weather: {title: "Weather", icon: "fa fa-cloud"},
+				weather: {title: "Current Weather", icon: "fa fa-cloud"},
 				wforecast: {title: "Weather Forecast", icon: "fa fa-line-chart"},
 				bivital: {title: "Vital Data" , icon: "fa fa-heartbeat"},
 				speech: {title: "Speech Recogn. Output", icon: "fa fa-comment"},
