@@ -92,13 +92,13 @@ Module.register("SmartMirror-Main-Menu-Center", {
 				back: {title: "Back" , icon: "fa fa-undo" }
 			},
 			entertainment: {
-				news: {title: "News", icon: "fa fa-newspaper-o" },
+				crypto: {title: "Crypto Stock Values", icon: "fa fa-bitcoin" },
 				newsfeed: {title: "Heise Newsfeed", icon: "fa fa-rss-square" },
+				news: {title: "News", icon: "fa fa-newspaper-o" },
 				comic:{title: "Daily Comic", icon:"fa fa-columns"},
 				soccer:{title: "Soccer Results", icon:"fa fa-circle"},
 				dota2:{title: "Dota2 Esports", icon:"fa fa-trophy"},
 				games:{title: "ITCH-IO Games", icon:"fa fa-gamepad"},
-				crypto: {title: "Crypto Stock Values", icon: "fa fa-bitcoin" },
 				back: {title: "Back" , icon: "fa fa-undo" }
 			},
 			smarthome: {
